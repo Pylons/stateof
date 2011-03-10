@@ -253,14 +253,16 @@ Pylons Project
 - Pylons 1.x web framework shifted into “legacy” status.  Maintained
   indefinitely.
 
-Pylons Subprojects
-------------------
+Pylons Project Members
+----------------------
 
 - Pylons-the-web-framework.
 
 - Pyramid and its add-ons.
 
-- Deform/Colander (form lib and validation lib).
+- TurboGears 1 and 2.
+
+- Various libraries.
 
 Pylons Project Visual
 ---------------------
