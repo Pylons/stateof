@@ -50,6 +50,8 @@ TurboGears
 
 - Developed as a replacement for Zope 2.
 
+- "Repoze" tagline: "Plumbing Zope 2 into the WSGI Pipeline".
+
 - The latest release of BFG is also its final major release.
 
 - Other ``repoze``-branded software survives (``repoze.who``,
@@ -113,6 +115,20 @@ October 2010, ``repoze.bfg`` was renamed to Pyramid.
 .. image:: pyramid-positive-80.png
    :align: center
 
+Pyramid
+-------
+
+- Pyramid is ``repoze.bfg`` plus features attractive to existing Pylons
+  users: alternative templating language, built-in sessioning, better URL
+  dispatch features, and better imperative configuration extensibility (no
+  ZCML).
+
+- Latest release of Pyramid: 1.0 on January 31, 2011.
+
+- Since January 31, 2011, ~5000 downloads (stronger takeup).
+
+- ~34 PyPI packages which depend on Pyramid as of today.
+
 Sample Application
 -------------------
 
@@ -130,18 +146,17 @@ Sample Application
        app = config.make_wsgi_app()
        serve(app, host='0.0.0.0')
 
-Pyramid
--------
+Paster Integration
+------------------
 
-- ``repoze.bfg`` plus Mako templating, built-in sessioning,
-  better URL dispatch features, and better imperative configuration
-  extensibility (no ZCML).
+You can use ``paster`` templates to create application scaffolding.
 
-- Latest release of Pyramid: 1.0 on January 31, 2011.
+::
 
-- Since January 31, 2011, ~5000 downloads (stronger takeup).
-
-- ~34 PyPI packages which depend on Pyramid as of today.
+   [chrism@thinko env26]$ bin/paster create -t \
+                           pyramid_starter starter
+   Selected and implied templates:
+       # .. many more lines ...
 
 Pyramid Features
 ----------------
@@ -171,6 +186,8 @@ Pyramid Features (more)
 - Easy "REST API" creation and JSON rendering.
 
 - Runs on CPython 2.4+, GAE, Jython, and PyPy (no Python 3 support yet).
+
+- Windows and UNIX.
 
 - Extensible configuration ("plugins", reuse an application without forking
   it).
