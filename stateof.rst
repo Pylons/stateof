@@ -6,25 +6,6 @@ PyCon 2011: State of Pylons, Turbogears, and repoze.bfg
 :Authors:  Chris McDonough, Ben Bangert, Mark Ramm
 :Date: 3/11/2011
 
-``repoze.bfg``
---------------
-
-.. image:: bfgbook.png
-   :align: center
-
-``repoze.bfg``
---------------
-
-- First released in July 2008.
-
-- Latest release of repoze.bfg: 1.3 on November 1, 2010.
-
-- Since November 1, 2010, about 1350 downloads (weak takeup).
-
-- 198 members of the repoze-dev maillist as of Mar 5 2011.
-
-- ~28 PyPI packages which depend on repoze.bfg
-
 Pylons
 ------
 
@@ -45,6 +26,25 @@ Pylons
 - ~2400 members of the pylons-discuss maillist as of Mar 5 2011.
 
 - ~60 PyPI packages which depend on Pylons
+
+``repoze.bfg``
+--------------
+
+.. image:: bfgbook.png
+   :align: center
+
+``repoze.bfg``
+--------------
+
+- First released in July 2008.
+
+- Latest release of repoze.bfg: 1.3 on November 1, 2010.
+
+- Since November 1, 2010, about 1350 downloads (weak takeup).
+
+- 198 members of the repoze-dev maillist as of Mar 5 2011.
+
+- ~28 PyPI packages which depend on repoze.bfg
 
 Pyramid
 -------
@@ -271,4 +271,17 @@ BFG Community Quotes
 `"Can I just say this is an almost unheard of degree of maturity and
 pragmatism for a framework author to display. I'm very impressed, and this is
 surely a good thing. Congratulations. :)"`
+
+
+Not Built by Aliens
+-------------------
+
+We deny it all.
+
+.. raw:: html
+
+   <div>
+   <object width="853" height="510"><param name="movie" value="http://www.youtube.com/v/oKFBWzeHYS4?fs=1&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/oKFBWzeHYS4?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="853" height="510"></embed></object>
+
+    </div>
 
