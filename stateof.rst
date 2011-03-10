@@ -80,14 +80,17 @@ TurboGears
 Pylons Project
 --------------
 
-COLLABORATE!
+.. class:: center
+
+Web frameworks are hard.  Let's :huge:`COLLABORATE!`.
 
 Pylons Project
 --------------
 
 - Project lead consolidation decision.
 
-- Merger of the Pylons, TurboGears and ``repoze.bfg`` communities.
+- Attempt to get Pylons, TurboGears and ``repoze.bfg`` communities rowing in
+  the same direction.
 
 - Pylons 1.x web framework shifted into “legacy” status.  Maintained
   indefinitely.
@@ -105,8 +108,7 @@ Pylons Project
 Pyramid
 -------
 
-October 2010, ``repoze.bfg`` was forked to become Pyramid, a Pylons Project
-subproject.
+October 2010, ``repoze.bfg`` was renamed to Pyramid.
 
 .. image:: pyramid-positive-80.png
    :align: center
