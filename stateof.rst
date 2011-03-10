@@ -36,15 +36,35 @@ Pylons
 ``repoze.bfg``
 --------------
 
+- Web framework inspired by Pylons, Django and Zope.
+
 - First released in July 2008.
 
-- Latest release of repoze.bfg: 1.3 on November 1, 2010.
+- Developed as a replacement for Zope 2.
 
-- Since November 1, 2010, about 1350 downloads (weak takeup).
+- The latest release of BFG is also its final major release.
 
-- 198 members of the repoze-dev maillist as of Mar 5 2011.
+``repoze.bfg``
+--------------
 
-- ~28 PyPI packages which depend on repoze.bfg
+- Since last November, fewer than 1400 downloads (weak takeup).
+
+- ~ 200 members of the ``repoze-dev`` maillist today.
+
+- ~ 28 PyPI packages which depend on repoze.bfg
+
+- Most users of ``repoze.bfg`` are ex-Zope users.
+
+``repoze.bfg``
+--------------
+
+- 100% statement coverage via unit tests.
+
+- 100% feature documentation.
+
+- Extensible configuration system.
+
+- ~ 80 committers.
 
 Pyramid
 -------
@@ -75,16 +95,15 @@ Sample Application
 Pyramid
 -------
 
-- ``repoze.bfg`` minus ZCML, plus Mako, built-in sessioning, better URL
-  dispatch features, and better imperative configuration extensibility.
-
-- Works on PyPI and Jython.
+- ``repoze.bfg`` plus Mako templating, built-in sessioning,
+  better URL dispatch features, and better imperative configuration
+  extensibility (no ZCML).
 
 - Latest release of Pyramid: 1.0 on January 31, 2011.
 
-- Since January 31, 2011 ~ 4500 downloads (strong takeup).
+- Since January 31, 2011, ~5000 downloads (stronger takeup).
 
-- ~34 PyPI packages which depend on Pyramid as of March 5.
+- ~34 PyPI packages which depend on Pyramid as of today.
 
 Pyramid Features
 ----------------
@@ -96,6 +115,8 @@ Pyramid Features
 - Internationalization.
 
 - Single-file apps or apps as packages.
+
+- PasteDeploy integration (familiar to Pylons people).
 
 - Easy unit, integration, functional testing.
 
@@ -111,11 +132,10 @@ Pyramid Features (more)
 
 - Easy "REST API" creation and JSON rendering.
 
-- Runs on CPython 2.4+, GAE, Jython, and PyPy (no Python 3 support).
+- Runs on CPython 2.4+, GAE, Jython, and PyPy (no Python 3 support yet).
 
-- Multiple modes of configuration.
-
-- Extensible configuration ("plugins", reuse apps without forking).
+- Extensible configuration ("plugins", reuse an application without forking
+  it).
 
 - Static asset features.
 
@@ -144,7 +164,7 @@ Pyramid Non-Features
 - Not a "microframework".  Has ~ 16 distribution dependencies.
   Microframework-like single-file apps possible though.
 
-- Somewhere in the middle; provides useful "rails".
+- Somewhere in the middle; provides useful "rails" but avoids "boxes".
 
 Paster Templates
 -----------------
@@ -242,6 +262,13 @@ Pylons Subprojects
 
 - Deform/Colander (form lib and validation lib).
 
+Pylons Project Visual
+---------------------
+
+.. image:: Diagram1.png
+   :align: center
+
+
 BFG to Pyramid
 --------------
 
@@ -284,4 +311,18 @@ We deny it all.
    <object width="853" height="510"><param name="movie" value="http://www.youtube.com/v/oKFBWzeHYS4?fs=1&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/oKFBWzeHYS4?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="853" height="510"></embed></object>
 
     </div>
+
+Sprints
+-------
+
+- Port WebOb to Python 3.
+
+- Discuss WebOb/Werkzeug collaboration with Flask folks.
+
+Futures
+-------
+
+- Pyramid 2 will be Python 3 compatible.
+
+- Higher-level frameworks built on top of the Pyramid codebase.
 
