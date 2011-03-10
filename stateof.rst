@@ -9,11 +9,8 @@ PyCon 2011: State of Pylons, Turbogears, and repoze.bfg
 ``repoze.bfg``
 --------------
 
-- Web framework inspired by Pylons, Django and Zope.
-
-.. class:: center
-
-   .. image:: bfgbook3d-front.png
+.. image:: bfgbook.png
+   :align: center
 
 ``repoze.bfg``
 --------------
@@ -28,6 +25,27 @@ PyCon 2011: State of Pylons, Turbogears, and repoze.bfg
 
 - ~28 PyPI packages which depend on repoze.bfg
 
+Pylons
+------
+
+Pylons Web Framework
+
+.. image:: pylons-positive-80.png
+   :align: center
+
+Pylons
+------
+
+- First released in 2006.
+
+- Latest release of Pylons: 1.0.
+
+- Since May 5, 2010, about 23K downloads.
+
+- ~2400 members of the pylons-discuss maillist as of Mar 5 2011.
+
+- ~60 PyPI packages which depend on Pylons
+
 Pyramid
 -------
 
@@ -35,11 +53,12 @@ October 2010, ``repoze.bfg`` was forked to become Pyramid, a Pylons Project
 subproject.
 
 .. image:: pyramid-positive-80.png
+   :align: center
 
 Sample Application
 -------------------
 
-::
+.. sourcecode:: python
 
    # imports elided
    @view_config(route_name='home')

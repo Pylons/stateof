@@ -8,3 +8,6 @@
 
 /* styles that make the slides look good */
 @import url(pretty.css);
+
+/* styles that make Pygments work */
+@import url(pygments.css);
