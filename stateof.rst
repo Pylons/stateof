@@ -27,6 +27,14 @@ Pylons
 
 - ~60 PyPI packages which depend on Pylons
 
+TurboGears
+----------
+
+- Insert text from Mark.
+
+.. image:: TgGear.png
+   :align: center
+
 ``repoze.bfg``
 --------------
 
@@ -43,6 +51,9 @@ Pylons
 - Developed as a replacement for Zope 2.
 
 - The latest release of BFG is also its final major release.
+
+- Other ``repoze``-branded software survives (``repoze.who``,
+  ``repoze.profile``, et. al.).
 
 ``repoze.bfg``
 --------------
@@ -65,6 +76,31 @@ Pylons
 - Extensible configuration system.
 
 - ~ 80 committers.
+
+Pylons Project
+--------------
+
+COLLABORATE!
+
+Pylons Project
+--------------
+
+- Project lead consolidation decision.
+
+- Merger of the Pylons, TurboGears and ``repoze.bfg`` communities.
+
+- Pylons 1.x web framework shifted into “legacy” status.  Maintained
+  indefinitely.
+
+- TurboGears 1 and 2 maintained indefinitely.
+
+- Most new development: Pyramid.
+
+Pylons Project
+--------------
+
+.. image:: Diagram1.png
+   :align: center
 
 Pyramid
 -------
@@ -243,33 +279,6 @@ Pyramid Add-Ons (more)
 * ``pyramid_xmlrpc``: XML-RPC add-on for Pyramid
 
 * ``akhet``: (in progress): Pylons-style development for Pyramid.
-
-Pylons Project
---------------
-
-- Merger of the Pylons and ``repoze.bfg`` communities.  Hoping to bring some
-  TurboGears folks aboard in 2011.
-
-- Pylons 1.x web framework shifted into “legacy” status.  Maintained
-  indefinitely.
-
-Pylons Project Members
-----------------------
-
-- Pylons-the-web-framework.
-
-- Pyramid and its add-ons.
-
-- TurboGears 1 and 2.
-
-- Various libraries.
-
-Pylons Project Visual
----------------------
-
-.. image:: Diagram1.png
-   :align: center
-
 
 BFG to Pyramid
 --------------
