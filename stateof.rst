@@ -1,6 +1,6 @@
 .. include:: <s5defs.txt>
 
-PyCon 2011: State of Pylons, Turbogears, and repoze.bfg
+PyCon 2011: State of Pylons, TurboGears, and repoze.bfg
 =======================================================
 
 :Authors:  Chris McDonough, Ben Bangert, Mark Ramm
