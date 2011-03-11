@@ -30,10 +30,32 @@ Pylons
 TurboGears
 ----------
 
-- Insert text from Mark.
+- The TurboGears community decided to join the Pylons Project.
 
 .. image:: TgGear.png
    :align: center
+
+TurboGears
+----------
+
+- TurboGears 2 and Pylons are going to be maintained together
+
+- We will fix bugs
+
+- We wil improve documentation
+
+- We will be very careful about API backwards compatability
+
+TurboGears
+----------
+
+TurboGears developers will work together with PylonsProject devs:
+
+ * to experiment and innovate on top of Pyramid
+
+ * to build an ecosystem around Pyramid
+
+ * to work out what a "full stack" framework looks like in 2011
 
 ``repoze.bfg``
 --------------
