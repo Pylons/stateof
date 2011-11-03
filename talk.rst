@@ -1,17 +1,17 @@
 .. include:: <s5defs.txt>
 
-PyCon 2011: State of Pylons, TurboGears, and repoze.bfg
-=======================================================
+Plone Conference 2011: Introduction to Pyramid
+==============================================
 
-:Authors:  Chris McDonough, Ben Bangert, Mark Ramm
-:Date: 3/11/2011
+:Authors:  Chris McDonough
+:Date: 11/3/2011
 
 Pylons
 ------
 
 Pylons Web Framework
 
-.. image:: pylons-positive-80.png
+.. image:: pylons-positive-40.png
    :align: center
 
 Pylons
@@ -21,9 +21,9 @@ Pylons
 
 - Latest release of Pylons: 1.0.
 
-- Since May 5, 2010, about 23K downloads.
+- About 150K downloads over its lifetime til now.
 
-- ~2400 members of the pylons-discuss maillist as of Mar 5 2011.
+- ~2600 members of the pylons-discuss maillist.
 
 - ~60 PyPI packages which depend on Pylons
 
@@ -40,27 +40,14 @@ TurboGears
 
 - TurboGears 2 and Pylons are going to be maintained together
 
-- We will fix bugs
+- Not as much collaboration as we'd like.
 
-- We wil improve documentation
-
-- We will be very careful about API backwards compatability
-
-TurboGears
-----------
-
-TurboGears developers will work together with PylonsProject devs:
-
- * to experiment and innovate on top of Pyramid
-
- * to build an ecosystem around Pyramid
-
- * to work out what a "full stack" framework looks like in 2011
+- Essentially not yet working together.
 
 ``repoze.bfg``
 --------------
 
-.. image:: bfgbook.png
+.. image:: bfgbookhalf.png
    :align: center
 
 ``repoze.bfg``
@@ -74,7 +61,7 @@ TurboGears developers will work together with PylonsProject devs:
 
 - "Repoze" tagline: "Plumbing Zope 2 into the WSGI Pipeline".
 
-- The latest release of BFG is also its final major release.
+- BFG has seen its final release (1.3).
 
 - Other ``repoze``-branded software survives (``repoze.who``,
   ``repoze.profile``, et. al.).
@@ -82,20 +69,18 @@ TurboGears developers will work together with PylonsProject devs:
 ``repoze.bfg``
 --------------
 
-- Since last November, fewer than 1400 downloads (weak takeup).
+- Fewer than 20K downloads in total (weak takeup).
 
 - ~ 200 members of the ``repoze-dev`` maillist today.
 
 - ~ 28 PyPI packages which depend on repoze.bfg
 
-- Most users of ``repoze.bfg`` are ex-Zope users.
+- Many users of ``repoze.bfg`` were ex-Zope users.
 
 ``repoze.bfg``
 --------------
 
-- 100% statement coverage via unit tests.
-
-- 100% feature documentation.
+- Good docs, good test regime.
 
 - Extensible configuration system.
 
@@ -126,7 +111,7 @@ Pylons Project
 Pylons Project
 --------------
 
-.. image:: Diagram1.png
+.. image:: Diagram2.png
    :align: center
 
 Pyramid
@@ -134,7 +119,7 @@ Pyramid
 
 October 2010, ``repoze.bfg`` was renamed to Pyramid.
 
-.. image:: pyramid-positive-80.png
+.. image:: pyramid-positive-40.png
    :align: center
 
 Pyramid
@@ -145,11 +130,11 @@ Pyramid
   dispatch features, and better imperative configuration extensibility (no
   ZCML).
 
-- Latest release of Pyramid: 1.0 on January 31, 2011.
+- Latest release of Pyramid: 1.2.1 on January 31, 2011.
 
-- Since January 31, 2011, ~5000 downloads (stronger takeup).
+- Since January 31, 2011, ~63K downloads (stronger takeup).
 
-- ~34 PyPI packages which depend on Pyramid as of today.
+- ~60 PyPI packages which depend on Pyramid as of today.
 
 Sample Application
 -------------------
@@ -168,18 +153,6 @@ Sample Application
        app = config.make_wsgi_app()
        serve(app, host='0.0.0.0')
 
-Paster Integration
-------------------
-
-You can use ``paster`` templates to create application scaffolding.
-
-::
-
-   [chrism@thinko env26]$ bin/paster create -t \
-                           pyramid_starter starter
-   Selected and implied templates:
-       # .. many more lines ...
-
 Pyramid Features
 ----------------
 
@@ -195,29 +168,37 @@ Pyramid Features
 
 - Easy unit, integration, functional testing.
 
-- WSGI deployment.
-
-- Comprehensive docs.
-
-Pyramid Features (more)
------------------------
+Pyramid Features
+----------------
 
 - Chameleon and Mako templating out of the box; Jinja2 as an add-on.
   Multiple templating systems can be used at the same time.
 
 - Easy "REST API" creation and JSON rendering.
 
-- Runs on CPython 2.4+, GAE, Jython, and PyPy (no Python 3 support yet).
+- Runs on CPython 2.5+, GAE, Jython, and PyPy.
+
+- Next release (1.3) will drop Python 2.5 compatibility in exchange for
+  Python 3 compatibility.
 
 - Windows and UNIX.
+
+Pyramid Features
+----------------
 
 - Extensible configuration ("plugins", reuse an application without forking
   it).
 
-- Static asset features.
+- WSGI deployment.
 
-Pyramid Features (more)
--------------------------
+- Comprehensive docs.
+
+- 100% statement coverage via unit tests.
+
+Pyramid Features
+----------------
+
+- Static asset features.
 
 - Sessioning, flash messaging, CSRF protection.
 
@@ -225,12 +206,9 @@ Pyramid Features (more)
 
 - Exception views.
 
-- WSGI middleware-provided exception debugging (WebError) and profiling
-  (repoze.profile).
+- Application debugging and profiling (``pyramid_debugtoolbar``).
 
 - Fast.
-
-- 100% statement coverage via unit tests.
 
 Pyramid Non-Features
 --------------------
@@ -238,7 +216,7 @@ Pyramid Non-Features
 - Not a "full-stack" framework; persistence-system agnostic, no admin
   interface.
 
-- Not a "microframework".  Has ~ 16 distribution dependencies.
+- Not a "microframework".  Has ~ 12 distribution dependencies.
   Microframework-like single-file apps possible though.
 
 - Somewhere in the middle; provides useful "rails" but avoids "boxes".
@@ -261,7 +239,7 @@ Technologies
 
 - Paste
 
-- ``zope.component``
+- ``zope.interface``
 
 - Chameleon
 
@@ -272,10 +250,10 @@ Technologies
 Not Zope
 --------
 
-- Pyramid != Zope.  Uses ``zope.component`` as a library, but it is not an
+- Pyramid != Zope.  Uses ``zope.interface`` as a library, but it is not an
   application-developer visible feature.
 
-- Steals some features from Zope though (traversal, declarative
+- Steals some concepts from Zope though (traversal, declarative
   authorization).
 
 Not Pylons
@@ -317,9 +295,13 @@ Pyramid Add-Ons (more)
 * ``pyramid_who``: Authentication policy for pyramid using repoze.who 2.0
   API.
 
-* ``pyramid_xmlrpc``: XML-RPC add-on for Pyramid
+* ``pyramid_rpc``: XML-RPC / JSONRPC add-on for Pyramid
 
-* ``akhet``: (in progress): Pylons-style development for Pyramid.
+* ``akhet``: Pylons-style development for Pyramid.
+
+* ``apex``: Authentication-centered development environment for Pyramid.
+
+* ``ptah``: Nascent development environment for Pyramid.
 
 BFG to Pyramid
 --------------
@@ -334,47 +316,15 @@ BFG to Pyramid
 - Pyramid is mostly backwards compatible with ``repoze.bfg`` via the use of
   automated conversion via the ``bfg2pyramid`` script.
 
-BFG Community Quotes
---------------------
-
-`"Congrats! Great to see synergy, particularly amongst Python web
-frameworks!"`
-
-`"HOORAY!!!!!"`
-
-`"This just totally made my day! Way to go guys."`
-
-BFG Community Quotes
---------------------
-
-`"Can I just say this is an almost unheard of degree of maturity and
-pragmatism for a framework author to display. I'm very impressed, and this is
-surely a good thing. Congratulations. :)"`
-
-
-Not Built by Aliens
--------------------
-
-We deny it all.
-
-.. raw:: html
-
-   <div>
-   <object width="853" height="510"><param name="movie" value="http://www.youtube.com/v/oKFBWzeHYS4?fs=1&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/oKFBWzeHYS4?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="853" height="510"></embed></object>
-
-    </div>
-
 Sprints
 -------
 
-- Port WebOb to Python 3.
-
-- Discuss WebOb/Werkzeug collaboration with Flask folks.
+- See https://github.com/Pylons/pyramid/wiki/Sprint-Ideas
 
 Futures
 -------
 
-- Pyramid 2 will be Python 3 compatible.
+- 1.3 due before end of year (focus: Python 3).
 
 - Higher-level frameworks built on top of the Pyramid codebase.
 
