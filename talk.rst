@@ -21,6 +21,8 @@ Pylons
 
 - Latest release of Pylons: 1.0.
 
+- New (1.0.1?) release imminent.
+
 - About 150K downloads over its lifetime til now.
 
 - ~2600 members of the pylons-discuss maillist.
@@ -122,13 +124,26 @@ October 2010, ``repoze.bfg`` was renamed to Pyramid.
 .. image:: pyramid-positive-40.png
    :align: center
 
+BFG to Pyramid
+--------------
+
+- Almost unanimous support from community members wrt to switch to Pyramid
+  branding.
+
+- Good conversion of BFG community into Pylons community.
+
+- BFG 1.3 will be the last release: superseded by Pyramid.
+
+- Pyramid is mostly backwards compatible with ``repoze.bfg`` via the use of
+  automated conversion via the ``bfg2pyramid`` script.
+
 Pyramid
 -------
 
 - Pyramid is ``repoze.bfg`` plus features attractive to existing Pylons
   users: alternative templating language, built-in sessioning, better URL
-  dispatch features, and better imperative configuration extensibility (no
-  ZCML).
+  dispatch features, and better imperative configuration extensibility (ZCML
+  is optional).
 
 - Latest release of Pyramid: 1.2.1 on January 31, 2011.
 
@@ -186,14 +201,14 @@ Pyramid Features
 Pyramid Features
 ----------------
 
-- Extensible configuration ("plugins", reuse an application without forking
+- Extensible configuration ("add-ons", reuse an application without forking
   it).
 
 - WSGI deployment.
 
 - Comprehensive docs.
 
-- 100% statement coverage via unit tests.
+- Full statement coverage via unit tests.
 
 Pyramid Features
 ----------------
@@ -210,8 +225,8 @@ Pyramid Features
 
 - Fast.
 
-Pyramid Non-Features
---------------------
+Nonfeatures
+-----------
 
 - Not a "full-stack" framework; persistence-system agnostic, no admin
   interface.
@@ -221,16 +236,15 @@ Pyramid Non-Features
 
 - Somewhere in the middle; provides useful "rails" but avoids "boxes".
 
-Paster Templates
------------------
+Scaffolds
+---------
 
 - Pyramid itself has very few opinions.
 
-- Paster templates have lots of opinions.
+- Scaffolds have lots of opinions.
 
-- Templates use (and disuse) specific Pyramid features and provide
-  integrations with specific persistence systems (SQLAlchemy, ZODB, MongoDB,
-  etc).
+- Scaffolds use specific Pyramid features and provide integrations with
+  specific persistence systems (SQLAlchemy, ZODB, MongoDB, etc).
 
 Technologies
 ------------
@@ -253,8 +267,8 @@ Not Zope
 - Pyramid != Zope.  Uses ``zope.interface`` as a library, but it is not an
   application-developer visible feature.
 
-- Steals some concepts from Zope though (traversal, declarative
-  authorization).
+- Steals many concepts from Zope though (traversal, declarative
+  authorization, Martian-style decorator scanning).
 
 Not Pylons
 ----------
@@ -269,13 +283,6 @@ Not Pylons
 
 - Has an analogue of Pylons-style "controllers" called "handlers".
 
-"MVC"
------
-
-- Labels.
-
-- To me, it's not MVC.  To you, it might be.
-
 Pyramid Add-Ons
 ---------------
 
@@ -287,9 +294,6 @@ Pyramid Add-Ons
 
 * ``pyramid_mailer``: a package for sending emails.
 
-Pyramid Add-Ons (more)
-----------------------
-
 * ``pyramid_rpc``: RPC service add-on for Pyramid.
 
 * ``pyramid_who``: Authentication policy for pyramid using repoze.who 2.0
@@ -297,24 +301,16 @@ Pyramid Add-Ons (more)
 
 * ``pyramid_rpc``: XML-RPC / JSONRPC add-on for Pyramid
 
+Pyramid Dev Envs
+-----------------
+
 * ``akhet``: Pylons-style development for Pyramid.
 
 * ``apex``: Authentication-centered development environment for Pyramid.
 
-* ``ptah``: Nascent development environment for Pyramid.
+* ``khufu``: SQL+traversal development environment for Pyramid.
 
-BFG to Pyramid
---------------
-
-- Almost unanimous support from community members wrt to switch to Pyramid
-  branding.
-
-- Almost total conversion of BFG community into Pylons community.
-
-- BFG 1.3 will be the last release: superseded by Pyramid.
-
-- Pyramid is mostly backwards compatible with ``repoze.bfg`` via the use of
-  automated conversion via the ``bfg2pyramid`` script.
+* ``ptah``: Nascent "full-stack" development environment for Pyramid.
 
 Sprints
 -------
